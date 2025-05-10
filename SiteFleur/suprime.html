@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Website</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="style.css"> 
+
+     <style>
+        /* Vos styles CSS existants */
+        body{
+        background-color: rgb(255, 234, 247);
+        }
+        /* Nouveaux styles pour améliorer la mise en page */
+        .container {
+            margin-top: 160px; /* Ajoute de l'espace entre l'en-tête et le formulaire */
+            padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
+        }
+
+        form {
+            max-width: 400px; /* Limite la largeur du formulaire pour le rendre plus lisible */
+            margin: 30px auto; /* Centre le formulaire horizontalement */
+            padding: 30px; /* Ajoute un peu d'espace à l'intérieur du formulaire */
+            border: 1px solid #080808; /* Ajoute une bordure pour le distinguer du reste du contenu */
+            border-radius: 5px; /* Ajoute des coins arrondis */
+        }
+        input {
+          border: 1px solid #ccc; /* Ajoute une bordure grise autour des champs de saisie */
+          border-radius: 10px; /* Ajoute des coins arrondis */
+          padding: 10px; /* Ajoute un espace à l'intérieur des champs de saisie */
+          width: 100%; /* Ajuste la largeur des champs de saisie pour occuper toute la largeur du conteneur */
+          margin-bottom: 10px; /* Ajoute un peu d'espace en bas des champs de saisie */
+          box-sizing: border-box; /* Inclut la bordure et le rembourrage dans la largeur totale */
+}
+     </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">FleurBelle <span>.</span></a>
+
+        <div class="icons">
+            <a href="#home">Home</a>
+            <a href="htmlllll.php" > panier</a>
+            <a href="#produit"> produit</a>
+            <a href="/user.html" > connexion</a>
+        </div>
+        <!-- Votre en-tête existant -->
+    </header>
+     <br>
+    <div class="container">
+        <h2 style="font-size: 15px;">supprimer le compte</h2>
+        
+        <form action="supprimer_utilisateur.php" method="post">
+            <div>
+                <label for="username" style="font-size: 15px;">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password" style="font-size: 15px;">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <button type="submit" class="btn">Supprimer</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

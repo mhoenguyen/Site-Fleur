@@ -1,0 +1,314 @@
+ <?php session_start();?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flower Website </title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">FleurBelle <span>.</span></a>
+
+        <div class="icons">
+            <a href="#home">Home</a>
+            <a href="affichage_panier.php"> panier</a>
+            <a href="#produit"> produit</a>
+            <a href="user.html"> connexion</a>
+            <p>  
+                <form action="recherche_produit.php" method="GET"> 
+                <input type="text" placeholder="Recherche produits" name="motcle">
+                <input type="submit" name="recherche" value="Rechercher" class="btn">
+                </form>
+            </p>
+        </div>
+    </header>
+
+   <section class="home" id="home">
+    <div class="content">
+        <h3>FleurBelle </h3>
+        <p>Le langage des fleurs, vieux de siècles, témoigne de leur pouvoir évocateur. </p>
+        <a href="#products" class="btn"> Shop Now</a>
+    </div>
+ </section>
+
+
+
+
+<section class="about" id="about">
+    <h1 class="heading"><span>about</span> us</h1>
+    <div class="row">
+        <div class="video-container">
+            <video id="Banner" autoplay loop muted>
+                <source src="images/blossoms_-_113004 (540p).mp4 " type="video/mp4">
+            </video>
+            <h3>best flowers sellers</h3>
+        </div>            
+
+        </div>
+    </div>
+</section>
+
+  <!--About section ends-->
+
+<!--icons section starts-->
+
+<section class="icons-container">
+    <div class="icons">
+        <div class="info">
+            <h3>Livraison gratuite</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <div class="info">
+            <h3>Retour en 10 jours </h3>
+            <span>Moneyback guarantee</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <div class="info">
+            <h3>cadeaux </h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <div class="info">
+            <h3> paienment securisée</h3>
+            <span>protected by paypal</span>
+        </div>
+    </div>
+</section>
+
+<!--icons section ends-->
+
+<!--Products section stars-->
+
+<section class="products" id="products">
+    <h1 class="heading">latest <span>products</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="images/img-1.jpg" alt="">
+                <div class="icons">
+                   <!-- Formulaire pour ajouter au panier -->
+                   <form action="panier.php" method="post">
+                    <!-- Champs cachés pour le nom et le prix du produit -->
+                    <input type="hidden" name="nom_produit" value="Flower pot 1">
+                    <input type="hidden" name="prix_produit" value="15.99">
+                    <!-- Bouton pour soumettre le formulaire -->
+                    <input type="submit" name="ajouter_panier" value="Ajouter au panier"  class="btn">
+                </form>
+            </div>
+        </div>
+            <div class="content">
+                <h3>Flower pot 1</h3>
+                <div class="price">$17.99 <span>$15.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="images/img-2.jpg" alt="">
+                <div class="icons">
+                    <!-- Formulaire pour ajouter au panier -->
+                    <form action="panier.php" method="post">
+                        <input type="hidden" name="nom_produit" value="Flower pot 2">
+                        <input type="hidden" name="prix_produit" value="15.99">
+                        <input type="submit" name="ajouter_panier" value="Ajouter au panier"  class="btn">
+                    </form>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot 2</h3>
+                <div class="price">$13.99 <span>$15.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-5%</span>
+            <div class="image">
+                <img src="images/img-3.jpg" alt="">
+                <div class="icons">
+                  <form action="panier.php" method="post">
+                    <input type="hidden" name="nom_produit" value="Flower pot 3">
+                    <input type="hidden" name="prix_produit" value="15.99">
+                    <input type="submit" name="ajouter_panier" value="Ajouter au panier"  class="btn">
+                </form>
+            </div>
+        </div>
+            <div class="content">
+                <h3>Flower pot 3</h3>
+                <div class="price">$14.99 <span>$15.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="image">
+                <img src="images/img-4.jpg" alt="">
+                <div class="icons">
+                 <form action="panier.php" method="post">
+                    <!-- Champs cachés pour le nom et le prix du produit -->
+                    <input type="hidden" name="nom_produit" value="Flower pot 4">
+                    <input type="hidden" name="prix_produit" value="15.99">
+                    <!-- Bouton pour soumettre le formulaire -->
+                    <input type="submit" name="ajouter_panier" value="Ajouter au panier"  class="btn">
+                </form>
+            </div>
+        </div>
+            <div class="content">
+                <h3>Flower pot 4</h3>
+                <div class="price">$12.99 <span>$15.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-17%</span>
+            <div class="image">
+                <img src="images/img-5.jpg" alt="">
+                <div class="icons">
+                 <!-- Formulaire pour ajouter au panier -->
+                 <form action="panier.php" method="post">
+                    <!-- Champs cachés pour le nom et le prix du produit -->
+                    <input type="hidden" name="nom_produit" value="Flower pot 5">
+                    <input type="hidden" name="prix_produit" value="15.99">
+                    <!-- Bouton pour soumettre le formulaire -->
+                    <input type="submit" name="ajouter_panier" value="Ajouter au panier"  class="btn">
+                </form>
+            </div>
+        </div>
+            <div class="content">
+                <h3>Flower pot 5</h3>
+                <div class="price">$14.99 <span>$15.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-3%</span>
+            <div class="image">
+                <img src="images/img-6.png" alt="">
+                <div class="icons">
+                      <!-- Formulaire pour ajouter au panier -->
+                      <form action="panier.php" method="post">
+                        <!-- Champs cachés pour le nom et le prix du produit -->
+                        <input type="hidden" name="nom_produit" value="Flower pot 6">
+                        <input type="hidden" name="prix_produit" value="15.99">
+                        <!-- Bouton pour soumettre le formulaire -->
+                        <input type="submit" name="ajouter_panier" value="Ajouter au panier"  class="btn">
+                    </form>
+                </div>
+            </div>
+                
+            <div class="content">
+                <h3>Flower pot 6</h3>
+                <div class="price">$18.99 <span>$15.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-18%</span>
+            <div class="image">
+                <img src="images/img-7.jpg" alt="">
+                <div class="icons">
+                    <!-- Formulaire pour ajouter au panier -->
+                    <form action="panier.php" method="post">
+                        <!-- Champs cachés pour le nom et le prix du produit -->
+                        <input type="hidden" name="nom_produit" value="Flower pot 7">
+                        <input type="hidden" name="prix_produit" value="15.99">
+                        <!-- Bouton pour soumettre le formulaire -->
+                        <input type="submit" name="ajouter_panier" value="Ajouter au panier"  class="btn">
+                    </form>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot 7</h3>
+                <div class="price">$15.99 <span>$15.99</span></div>
+            </div>
+        </div>
+        
+        
+
+     
+</section>
+<!--Products section ends-->
+
+
+<!--comment  section starts-->
+<section class="comments" id="comments">
+    <h1 class="heading">Comments and Ratings</h1>
+    <div class="comment-container">
+        <div class="comment-box">
+            <form action="ajouter_commentaire.php" method="post">
+                <label for="id_produit">produit:</label>
+                <select name="id_produit" id="id_produit" required>
+                    <option value="Flower pot 1">Flower pot 1</option>
+                    <option value="Flower pot 2">Flower pot 2</option>
+                    <option value="Flower pot 3">Flower pot 3</option>
+                    <option value="Flower pot 4">Flower pot 4</option>
+                    <option value="Flower pot 5">Flower pot 5</option>
+                    <option value="Flower pot 6">Flower pot 6</option>
+                    <option value="Flower pot 7">Flower pot 7</option>
+                </select>
+                <textarea name="commentaire" placeholder="Write your comment here" required></textarea>
+                <!-- Ajout de la section pour la note -->
+                <label for="rating">note sur 5 :</label>
+                <select name="rating" id="rating" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br>
+                <!-- Fin de la section pour la note -->
+                <input type="submit" value="Submit Comment" class="btn">
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+<!--review section ends-->
+
+
+<section class="contact" id="contact">
+    <h1 class="heading"><span>contact</span> us</h1>
+    <div class="row">
+        <form id="addClientform" action="contact.php" method="POST">
+            <label id="addClientlabel" for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom" placeholder="Name *" required>
+            <br>
+            
+            
+            <label id="addClientlabel" for="mail">Mail :</label>
+            <input type="email" name="mail" id="mail" placeholder="email*" required>
+            
+            <br>
+            <label id="addClientlabel" for="phone">Numéro de téléphone :</label>
+            <input type="texte" name="phone" id="phone" placeholder="EX: 06 10 30 49 00*" required>
+            <br>
+            <label id="addClientlabel" for="mess">Message :</label>
+            <input type="text" name="mess" id="mess" placeholder=" Votre message*" required>
+            <br>
+            <input type="submit" class="btn">
+            </form> 
+            
+        </form>
+        <div class="image">
+        </div>
+    </div>
+</section>
+
+<!--contact section ends-->
+
+</body>
+</html>
